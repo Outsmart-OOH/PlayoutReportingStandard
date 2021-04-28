@@ -140,15 +140,15 @@ The schema as detailed in OpenDirect OOH 1.5.1 standard
 
 The structure of the name of the JSON reporting file is as follows
 
-AccountId_OrderId_LineId_StartTimeOfData_EndTimeOfData_PublishTimeofData.json
+*AccountId*_*OrderId*_*LineId*_*StartTime*_*EndTime*_*PublishTime*.json
   
 Where
 * AccountId = The Account ID of the campaign buyer
 * OrderId = The Order ID of the campaign order
 * LineId = The Order Line ID of the playout report 
-* StartTimeOfData = The start time of the data written in the playout report
-* EndTimeOfData = The end time of the data writted in the playout report 
-* PublishTimeofData = The time when the playout report file was written 
+* StartTime = The start time of the data written in the playout report
+* EndTime = The end time of the data writted in the playout report 
+* PublishTime = The time when the playout report file was written 
 
 All time fields must be recorded in ISO-8601 format to Coordinated Universal Time (UTC) 
 
