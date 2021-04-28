@@ -1,6 +1,6 @@
 ![OutsmartLogo](Pictures/OutsmartLogo.png)
 
-Playout Reporting Standard v2.0 - April 2021
+Out-Of-Home Playout Reporting Standard v2.0 - April 2021
 
 Version Control
 v1.0 Anon July 2018
