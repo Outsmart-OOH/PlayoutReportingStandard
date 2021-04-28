@@ -14,17 +14,17 @@ Playout Reporting Standard v2.0 - April 2021
 
 [5 Reporting Levels](#5-reporting-levels)
 
-[6 The Summary Report Data Standard] (#6-the-summary-report-data-standard)
+[6 The "Summary Report" Data Standard](#6-the-summary-report-data-standard)
 
-[7 The “Playout Report” Data Standard] (#7-the-playout-report-data-standard)
+[7 The “Playout Report” Data Standard](#7-the-playout-report-data-standard)
 
-[8 Example Reports] (#8-Example-Reports)
+[8 Example Reports](#8-Example-Reports)
 
-[9 JSON Schema] (#9-JSON-Schema)
+[9 JSON Schema](#9-JSON-Schema)
 
-[10 JSON Filename] (#10-JSON-Filename)
+[10 JSON Filename](#10-JSON-Filename)
 
-[11 Report Publishing] (#11-Report-Publishing)
+[11 Report Publishing](#11-Report-Publishing)
 
 
 
