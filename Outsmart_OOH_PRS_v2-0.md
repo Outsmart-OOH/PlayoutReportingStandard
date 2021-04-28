@@ -159,10 +159,10 @@ granular detail is required.
 ![Level6DOOH](Pictures/Level6DOOH.png)
 
 # 9. JSON Schema
-The JSON schema is as detailed in Stats OOH Reporting object in [OpenDirect OOH 1.5.1](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-1/OpenDirect_OOH_1-5-1_v1-1.md)
+The JSON schema is as described in the Stats OOH Reporting object in [OpenDirect OOH 1.5.1](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-1/OpenDirect_OOH_1-5-1_v1-1.md)
 
 ## Granularity
-The report is delivered at the Spot level of granularity (Outsmart Level 5/6 Reporting)
+It is required that the ooh playout reporting is delivered at the 'Spot Level' of reporting granularity (Level 5/6 Reporting as detiled in this document)
 
 ## Classic Reporting Example
 ```json
@@ -265,7 +265,3 @@ Example Filename:
 # 11. Report Publishing
 The inital reccomendation is that the playout reports are written to a secure shared folder, ftp location or bucket that is only made available to the relevant client account user(s)
 The frequency of writing the playout reporting files is at the Media Owner / Publisher's discretion.
-
-
-
-
