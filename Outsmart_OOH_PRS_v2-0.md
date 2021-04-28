@@ -1,6 +1,5 @@
 ![OutsmartLogo](Pictures/OutsmartLogo.png)
-
-Out-Of-Home Playout Reporting Standard v2.0 - April 2021
+## Out-Of-Home Playout Reporting Standard v2.0 - April 2021
 
 ## Version Control
 
@@ -11,27 +10,29 @@ Out-Of-Home Playout Reporting Standard v2.0 - April 2021
 
 ## Contributors
 
-**Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein
+**Clear Channel** Karen Fornos Klein, Joao Baptista, Miles Talmey
 
-**Global** Dan Sharp, Luke Howard, Matt Allard, Rob Brayshaw
+**Global** Matt Allard, Denis Garcia, Olga Belousova
 
-**JCDecaux** Dom Kozak, Philippa Kings, Rebecca Lee
+**JCDecaux** Rebecca Lee
 
-**Key Systems** Jon Axworthy, Ross Lafar
+**Kinetic** Prasaant Patel
 
-**Kinetic** Alex Berry, Georgina Monet, Prasaant Patel
+**Knitting Media** Tim Harvey
 
 **Mediacom** Nate Barker
 
-**Ocean Outdoor** Angela Green, Doug Swan, Luka Djukic
+**Mereo** Luka Djukic
 
-**Posterscope** Daniel Conway, Steve Pavett, Gavin Lee
+**Ocean Outdoor** Angela Green, Doug Swan
 
-**Rapport** Paul Sambrook, Ross Wilson, Gail Williams
+**Posterscope** Daniel Conway, Alex Radu
+
+**SignKick LiveDooh** Sebastiaan Schinkel
 
 **Talon Outdoor** Anant East
 
-**Knitting Media** Tim Harvey
+**VIOOH** Ioana Dima, Jack Paget
 
 
 # Contents
