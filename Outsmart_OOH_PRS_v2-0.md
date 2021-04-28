@@ -1,4 +1,5 @@
 ![OutsmartLogo](Pictures/OutsmartLogo.png)
+
 Reporting Standard v2.0 - April 2021
 
 # Contents
