@@ -10,6 +10,24 @@ Playout Reporting Standard v2.0 - April 2021
 
 [3 Introduction](#3-introduction)
 
+[4 Asset Defintitions](#4-asset-definitions)
+
+[5 Reporting Levels](#5-reporting-levels)
+
+[6 The “Summary Report” Data Standard] (#6-The-“Summary Report”-Data-Standard)
+
+[7 The “Playout Report” Data Standard] (#7-The-“Playout Report”-Data-Standard)
+
+[8 Example Reports] (#8-Example-Reports)
+
+[9 JSON Schema] (#9-JSON-Schema)
+
+[10 JSON Filename] (#10-JSON-Filename)
+
+[11 Report Publishing] (#11-Report-Publishing)
+
+
+
 # 1 About Outsmart
 
 Outsmart is the UK trade body for the Out of Home advertising industry. Our members include the biggest
@@ -37,7 +55,7 @@ The following document is a guideline that covers the minimum detail required an
 document may add additional requirements.
 
 
-Assets: Definitions
+# 4 Asset Definitions
 
 SPACE is the industry database of OOH advertising assets.
 
@@ -48,14 +66,14 @@ Every OOH asset held within the database is ascribed a unique reference number (
 The characteristics of each asset are held within the database and subject to the agreed definitions.
 
 
-Reporting Levels
+# 5 Reporting Levels
 
 This table sets out the attributes that differentiate the types of standard report.
 
 Further work is to be undertaken on Level 6 to standardise transmission of Playout level data.
 
 
-The “Summary Report” Data Standard
+# 6 The “Summary Report” Data Standard
 
 This is the standard for day/hour specific reporting that can be shared with customers to report on order-
 specific campaign delivery.
@@ -63,28 +81,33 @@ specific campaign delivery.
 The attached examples assume that they are accompanied by an Order ID that references that specific
 campaign.
 
-The “Playout Report” Data standard
+# 7 The “Playout Report” Data Standard
 
 This is the standard for reporting on the display of campaigns that can be shared with customers if more
 granular detail is required.
 
 
-Appendix: Example Reports
+# 8 Example Reports
 
-Level 1 – Summary Report Example (Classic OOH)
+## Level 1 – Summary Report Example (Classic OOH)
 
-Level 1 – Summary Report Example (DOOH)
+## Level 1 – Summary Report Example (DOOH)
 
-Level 2 - Summary Report Example (Classic)
+## Level 2 - Summary Report Example (Classic)
 
+## Level 2 - Summary Report Example (DOOH)
 
-Level 2 - Summary Report Example (DOOH)
+## Level 3/4 - Summary Report Example (Classic)
 
-Level 3/4 - Summary Report Example (Classic)
+## Level 3/4 - Summary Report Example (DOOH)
 
-Level 3/4 - Summary Report Example (DOOH)
+## Level 5/6 Playout Example (Classic)
 
+## Level 5/6 Playout Example (DOOH)
 
-Level 5/6 Playout Example (Classic)
+# 9 JSON Schema
 
-Level 5/6 Playout Example (DOOH)
+# 10 JSON Filename
+
+# 11 Report Publishing
+Inital reccomendation is via a shared folder, ftp location or bucket. 
