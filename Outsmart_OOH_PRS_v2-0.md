@@ -134,8 +134,23 @@ granular detail is required.
 ![Level6DOOH](Pictures/Level6DOOH.png)
 
 # 9. JSON Schema
+The schema as detailed in OpenDirect OOH 1.5.1 standard
 
 # 10. JSON Filename
 
+The structure of the name of the JSON reporting file is as follows
+
+<AccountId>_<OrderId>_<LineId>_<StartTimeOfData>_<EndTimeOfData>_<PublishTimeofData>.json
+  
+Where
+..*AccountId = The Account ID of the campaign buyer
+..*OrderId = The Order ID of the campaign order
+..*LineId = The Order Line ID of the playout report 
+..*StartTimeOfData = The start time of the data written in the playout report
+..*EndTimeOfData = The end time of the data writted in the playout report 
+..*PublishTimeofData = The time when the playout report file was written 
+
+All time fields must be recorded in ISO-8601 format to Coordinated Universal Time (UTC) 
+
 # 11. Report Publishing
-Inital reccomendation is via a shared folder, ftp location or bucket. 
+Inital reccomendation is via a secure shared folder, ftp location or bucket that is only made availabel to the relevant client account user(s)
