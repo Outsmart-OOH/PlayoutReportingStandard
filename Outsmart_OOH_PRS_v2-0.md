@@ -1,29 +1,27 @@
 ![OutsmartLogo](Pictures/OutsmartLogo.png)
 
-Reporting Standard v2.0 - April 2021
+Playout Reporting Standard v2.0 - April 2021
 
 # Contents
 
+[1 About Outsmart](#1-about-outsmart)
 
+[2 About OOH Industry Standards Committee](#2-about-ooh-industry-standards-committee)
 
-[1. About Outsmart](#1-introductionoverview)
+[3 Introduction](#3-introduction)
 
-[2. About OOH Industry Standards Committee](#about-ooh-industry-standards-committee)
-
-[3 Introduction](#21-account)
-
-# About Outsmart
+# 1 About Outsmart
 
 Outsmart is the UK trade body for the Out of Home advertising industry. Our members include the biggest
 sellers of OOH advertising in the UK including Clear Channel, Global, JCDecaux and Ocean Outdoor.
 
-# About OOH Industry Standards Committee
+# 2 About OOH Industry Standards Committee
 
 The OOH Standards Committee has representation from both Outsmart and IPAO. The IPAO represents the
 biggest buyers of Out of Home advertising. The committee consults, develops and agrees upon standards which
 are required to improve the efficiency and effectiveness of the operation of Out of Home Buying and Selling
 
-# Introduction
+# 3 Introduction
 
 The agreed Reporting standard impacts any business that sends, receives or processes OOH reports. This
 includes Media Owners, Specialists, Agencies and technology providers.
