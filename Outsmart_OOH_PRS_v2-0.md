@@ -1,4 +1,4 @@
-Reporting Standard v1.0 - July 2018
+Reporting Standard v2.0 - April 2021
 
 # About Outsmart
 
@@ -11,8 +11,7 @@ The OOH Standards Committee has representation from both Outsmart and IPAO. The 
 biggest buyers of Out of Home advertising. The committee consults, develops and agrees upon standards which
 are required to improve the efficiency and effectiveness of the operation of Out of Home Buying and Selling
 
-
-Introduction
+# Introduction
 
 The agreed Reporting standard impacts any business that sends, receives or processes OOH reports. This
 includes Media Owners, Specialists, Agencies and technology providers.
