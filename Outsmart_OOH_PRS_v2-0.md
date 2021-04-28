@@ -77,7 +77,7 @@ The characteristics of each asset are held within the database and subject to th
 
 This table sets out the attributes that differentiate the types of standard report.
 
-Further work is to be undertaken on Level 6 to standardise transmission of Playout level data.
+It is reccomended that Media Owners and Publishers implement Level 6 to standardise the transmission of the most granular and frequent as detailed in the [JSON Schema](#9-JSON-Schema)
 
 ![ReportingLevels](Pictures/Levels.png)
 
