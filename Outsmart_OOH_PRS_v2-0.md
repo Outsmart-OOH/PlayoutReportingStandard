@@ -140,7 +140,7 @@ The schema as detailed in OpenDirect OOH 1.5.1 standard
 
 The structure of the name of the JSON reporting file is as follows
 
-<AccountId>_<OrderId>_<LineId>_<StartTimeOfData>_<EndTimeOfData>_<PublishTimeofData>.json
+AccountId_OrderId_LineId_StartTimeOfData_EndTimeOfData_PublishTimeofData.json
   
 Where
 * AccountId = The Account ID of the campaign buyer
