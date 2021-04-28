@@ -119,7 +119,7 @@ granular detail is required.
 
 ## Level 3/4 - Summary Report Example (Classic)
 
-![Level3Classic](Pictures/Level13Classic.png)
+![Level3Classic](Pictures/Level3Classic.png)
 
 ## Level 3/4 - Summary Report Example (DOOH)
 
@@ -127,7 +127,7 @@ granular detail is required.
 
 ## Level 5/6 Playout Example (Classic)
 
-![Level6Classic](Pictures/Level16Classic.png)
+![Level6Classic](Pictures/Level6Classic.png)
 
 ## Level 5/6 Playout Example (DOOH)
 
