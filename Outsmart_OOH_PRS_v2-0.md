@@ -140,7 +140,7 @@ The schema as detailed in OpenDirect OOH 1.5.1 standard
 
 The structure of the name of the JSON reporting file is as follows:
 
-AccountId_OrderId_LineId_StartTime_EndTime_PublishTime.json
+*AccountId_OrderId_LineId_StartTime_EndTime_PublishTime.json*
   
 Where:
 * AccountId = The Account ID of the campaign buyer
@@ -156,7 +156,7 @@ e.g. yyyy-mm-ddThhmmsssZ
 
 Example Filename:
 
-ACCT1234_OD54321_LN54321-1_2021-11-01T0000000Z_2021-11-08T1730000Z_2021-11-09T0300000Z.json
+*ACCT1234_OD54321_LN54321-1_2021-11-01T0000000Z_2021-11-08T1730000Z_2021-11-09T0300000Z.json*
 
 # 11. Report Publishing
 Inital reccomendation is via a secure shared folder, ftp location or bucket that is only made availabel to the relevant client account user(s)
