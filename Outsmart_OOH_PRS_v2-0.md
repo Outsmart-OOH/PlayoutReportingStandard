@@ -2,6 +2,14 @@
 
 Playout Reporting Standard v2.0 - April 2021
 
+Version Control
+v1.0 Anon July 2018
+v2.0 TH April 2021
+
+Contributers
+etc.
+
+
 # Contents
 
 [1 About Outsmart](#1-about-outsmart)
@@ -25,7 +33,6 @@ Playout Reporting Standard v2.0 - April 2021
 [10 JSON Filename](#10-JSON-Filename)
 
 [11 Report Publishing](#11-Report-Publishing)
-
 
 
 # 1 About Outsmart
