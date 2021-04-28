@@ -2,12 +2,36 @@
 
 Out-Of-Home Playout Reporting Standard v2.0 - April 2021
 
-Version Control
-v1.0 Anon July 2018
-v2.0 TH April 2021
+## Version Control
 
-Contributers
-etc.
+| **Version** | **Author** | **Date** | **Description** |
+| --- | --- | --- | ---  |
+| 1.0| Anon | July 2018 | Out-Of-Home Playout Reporting Standard |
+| 2.0 | Tim Harvey | April 2021 | Out-Of-Home Playout Reporting Standard + JSON Implementation |
+
+## Contributors
+
+**Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein
+
+**Global** Dan Sharp, Luke Howard, Matt Allard, Rob Brayshaw
+
+**JCDecaux** Dom Kozak, Philippa Kings, Rebecca Lee
+
+**Key Systems** Jon Axworthy, Ross Lafar
+
+**Kinetic** Alex Berry, Georgina Monet, Prasaant Patel
+
+**Mediacom** Nate Barker
+
+**Ocean Outdoor** Angela Green, Doug Swan, Luka Djukic
+
+**Posterscope** Daniel Conway, Steve Pavett, Gavin Lee
+
+**Rapport** Paul Sambrook, Ross Wilson, Gail Williams
+
+**Talon Outdoor** Anant East
+
+**Knitting Media** Tim Harvey
 
 
 # Contents
@@ -231,12 +255,16 @@ Where:
 
 All time fields must be recorded in ISO-8601 format to Coordinated Universal Time (UTC)
 The ':' is ommitted in the hour, minutes and seconds description as it is not recognised in filenames on common computer operating systems.
-e.g. yyyy-mm-ddThhmmsssZ
+e.g. yyyy-mm-ddThhmmssZ
 
 Example Filename:
 
-*ACCT1234_OD54321_LN54321-1_2021-11-01T0000000Z_2021-11-08T1730000Z_2021-11-09T0300000Z.json*
+*ACCT1234_OD54321_LN54321-1_2021-11-01T000000Z_2021-11-08T173000Z_2021-11-09T030000Z.json*
 
 # 11. Report Publishing
-Inital reccomendation is via a secure shared folder, ftp location or bucket that is only made available to the relevant client account user(s)
+The inital reccomendation is that the playout reports are written to a secure shared folder, ftp location or bucket that is only made available to the relevant client account user(s)
 The frequency of writing the playout reporting files is at the Media Owner / Publisher's discretion.
+
+
+
+
