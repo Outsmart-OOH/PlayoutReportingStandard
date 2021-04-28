@@ -134,7 +134,86 @@ granular detail is required.
 ![Level6DOOH](Pictures/Level6DOOH.png)
 
 # 9. JSON Schema
-The schema as detailed in OpenDirect OOH 1.5.1 standard
+The JSON schema is as detailed in Stats OOH Reporting object in [OpenDirect OOH 1.5.1](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-1/OpenDirect_OOH_1-5-1_v1-1.md)
+
+## Granularity
+The report is delivered at the Spot level of granularity (Outsmart Level 5/6 Reporting)
+
+## Classic Reporting Example
+```json
+{
+    "AccountId": "23873345",
+    "OrderId": "3479",
+    "LineId": "7",
+    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-10T01:00:00.000Z",
+    "Report": [
+        {
+            "StartTime": "2020-12-09T00:00:00Z",
+            "EndTime":"2020-12-10T00:00:00Z",
+            "FrameID":"1234159856",
+            "CreativeID":"adfgj123",
+            "ShareOfTime":"100%"
+        },
+        {
+            "StartTime": "2020-12-09T00:00:00Z",
+            "EndTime":"2020-12-10T00:00:00Z",
+            "FrameID":"1234159857",
+            "CreativeID":"adfgj123",
+            "ShareOfTime":"100%"
+        }
+    ]
+}
+```
+## Digital Reporting Example
+```json
+{
+    "AccountId": "23873345",
+    "OrderId": "3479",
+    "LineId": "8",
+    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-10T01:00:00.000Z",
+    "Report": [ 
+        {
+            "StartTime": "2020-12-09T00:00:00Z",
+            "EndTime":"2020-12-09T00:00:10Z",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartTime": "2020-12-09T00:02:00Z",
+            "EndTime":"2020-12-09T00:02:10Z",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartTime": "2020-12-09T00:03:00Z",
+            "EndTime":"2020-12-09T00:03:10Z",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartTime": "2020-12-09T00:04:00Z",
+            "EndTime":"2020-12-09T00:04:10Z",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartTime": "etc",
+            "EndTime":"etc",
+            "FrameID":"etc",
+            "CreativeID":"etc",
+            "ShareOfTime":"etc"
+        }
+    ]
+}
+```
 
 # 10. JSON Filename
 
@@ -159,4 +238,5 @@ Example Filename:
 *ACCT1234_OD54321_LN54321-1_2021-11-01T0000000Z_2021-11-08T1730000Z_2021-11-09T0300000Z.json*
 
 # 11. Report Publishing
-Inital reccomendation is via a secure shared folder, ftp location or bucket that is only made availabel to the relevant client account user(s)
+Inital reccomendation is via a secure shared folder, ftp location or bucket that is only made available to the relevant client account user(s)
+The frequency of writing the playout reporting files is at the Media Owner / Publisher's discretion.
