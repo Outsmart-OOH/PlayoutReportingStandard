@@ -72,6 +72,8 @@ This table sets out the attributes that differentiate the types of standard repo
 
 Further work is to be undertaken on Level 6 to standardise transmission of Playout level data.
 
+![ReportingLevels](Pictures/Levels.png)
+
 
 # 6 The “Summary Report” Data Standard
 
@@ -81,11 +83,14 @@ specific campaign delivery.
 The attached examples assume that they are accompanied by an Order ID that references that specific
 campaign.
 
+![SummaryReport](Pictures/Summary.png)
+
 # 7 The “Playout Report” Data Standard
 
 This is the standard for reporting on the display of campaigns that can be shared with customers if more
 granular detail is required.
 
+![PlayoutReport](Pictures/Standard.png)
 
 # 8 Example Reports
 
