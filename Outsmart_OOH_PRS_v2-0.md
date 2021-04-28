@@ -103,19 +103,35 @@ granular detail is required.
 
 ## Level 1 – Summary Report Example (Classic OOH)
 
+![Level1Classic](Pictures/Level1Classic.png)
+
 ## Level 1 – Summary Report Example (DOOH)
+
+![Level1DOOH](Pictures/Level1DOOH.png)
 
 ## Level 2 - Summary Report Example (Classic)
 
+![Level2Classic](Pictures/Level2Classic.png)
+
 ## Level 2 - Summary Report Example (DOOH)
+
+![Level2DOOH](Pictures/Level2DOOH.png)
 
 ## Level 3/4 - Summary Report Example (Classic)
 
+![Level3Classic](Pictures/Level13Classic.png)
+
 ## Level 3/4 - Summary Report Example (DOOH)
+
+![Level3DOOH](Pictures/Level3DOOH.png)
 
 ## Level 5/6 Playout Example (Classic)
 
+![Level6Classic](Pictures/Level16Classic.png)
+
 ## Level 5/6 Playout Example (DOOH)
+
+![Level6DOOH](Pictures/Level6DOOH.png)
 
 # 9 JSON Schema
 
