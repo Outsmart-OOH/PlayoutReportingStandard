@@ -7,7 +7,7 @@ Reporting Standard v2.0 - April 2021
 
 [1. About Outsmart](#1-introductionoverview)
 
-[2. About OOH Industry Standards Committee](#2-About-OOH-Industry-Standards-Committee)
+[2. About OOH Industry Standards Committee](#about-ooh-industry-standards-committee)
 
 [3 Introduction](#21-account)
 
