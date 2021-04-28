@@ -1,5 +1,5 @@
 ![OutsmartLogo](Pictures/OutsmartLogo.png)
-## Out-Of-Home Playout Reporting Standard v2.0 - April 2021
+# Out-Of-Home Playout Reporting Standard v2.0 - April 2021
 
 ## Version Control
 
