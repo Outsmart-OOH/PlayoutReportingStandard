@@ -102,7 +102,7 @@ The characteristics of each asset are held within the database and subject to th
 
 This table sets out the attributes that differentiate the types of standard report.
 
-It is reccomended that Media Owners and Publishers implement Level 6 to standardise the transmission of the most granular and frequent as detailed in the [JSON Schema](#9-JSON-Schema)
+It is reccomended that Media Owners and Publishers implement Level 5 or Level 6 as detailed in the [JSON Schema](#9-JSON-Schema)
 
 ![ReportingLevels](Pictures/Levels.png)
 
@@ -162,9 +162,9 @@ granular detail is required.
 The JSON schema is as described in the Stats OOH Reporting object in [OpenDirect OOH 1.5.1](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-1/OpenDirect_OOH_1-5-1_v1-1.md)
 
 ## Granularity
-It is required that the ooh playout reporting is delivered at the 'Spot Level' of reporting granularity (Level 5/6 Reporting as detiled in this document)
+It is required that the ooh playout reporting is delivered at the 'Spot Level' of reporting granularity (Level 5 or Level 6 Reporting as detiled in this document)
 
-## Classic Reporting Example
+## Level 5 and Level 6 Classic Reporting JSON Example
 ```json
 {
     "AccountId": "23873345",
@@ -191,7 +191,7 @@ It is required that the ooh playout reporting is delivered at the 'Spot Level' o
     ]
 }
 ```
-## Digital Reporting Example
+## Level 5 and Level 6 Digital Reporting JSON Example
 ```json
 {
     "AccountId": "23873345",
