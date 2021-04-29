@@ -1,13 +1,6 @@
 ![OutsmartLogo](Pictures/OutsmartLogo.png)
 # Out-Of-Home Playout Reporting Standard v2.0 - April 2021
 
-## Version Control
-
-| **Version** | **Author** | **Date** | **Description** |
-| --- | --- | --- | ---  |
-| 1.0| Anon | July 2018 | Out-Of-Home Playout Reporting Standard |
-| 2.0 | Tim Harvey | April 2021 | Out-Of-Home Playout Reporting Standard + JSON Implementation |
-
 ## Contributors
 
 **Clear Channel** Karen Fornos Klein, Joao Baptista, Miles Talmey
