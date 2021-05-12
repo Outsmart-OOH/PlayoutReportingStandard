@@ -152,16 +152,45 @@ granular detail is required.
 ![Level6DOOH](Pictures/Level6DOOH.png)
 
 # 9. JSON Schema
+It is required that the ooh playout reporting is delivered at the 'Spot Level' of reporting granularity (Level 5 or Level 6 Reporting as detailed in this document)
 The JSON schema is as follows:
 
-Reporting Object
+## Reporting Object
+| Attribute         | Description                                             | Type         |
+| ----------------- | ------------------------------------------------------- | ------------ |
+| ReportPublishTime | The time the Report was published                       | ISO-8601     |
+| ReportStartTime   | The start time of the first playout event in the Report | ISO-8601     |
+| ReportEndTime     | The end time of the last playout event in the Report    | ISO-8601     |
+| Report            | Array of Report Objects                                 | Object Array |
 
-Report Object
+## Report Object
+| Attribute       | Description                                                                                                                                                                     | Type         |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| AccountId       | The buyer Account the Order was made to                                                                                                                                         | String(255)  |
+| OrderId         | The Order ID                                                                                                                                                                    | String(255)  |
+| LineId          | The Order Line ID                                                                                                                                                               | String(255)  |
+| OOHProviderData | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references. | Object       |
+| Stats           | An array of 'Stats' objects describing playout Report Data at 'Spot' level                                                                                                      | Object Array |
 
-Stats Object
+## Stats Object
+| Attribute  | Description                                                        | Type        |
+| ---------- | ------------------------------------------------------------------ | ----------- |
+| StartTime  | Start Time of the 'Spot' playout event                             | ISO-8601    |
+| EndTime    | End Time of the 'Spot' playout event                               | ISO-8601    |
+| FrameId    | Media Owner's given ID for the Frame displaying the playout event  | String(255) |
+| CreativeId | Media Owner's given ID for the creative shown in the playout event | String(255) |
 
-## Granularity
-It is required that the ooh playout reporting is delivered at the 'Spot Level' of reporting granularity (Level 5 or Level 6 Reporting as detiled in this document)
+
+## OOHProviderData Object
+| Attribute            | Description                                                                                                                                                                                                                                                                                                                                          | Type         |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| CampaignId           | Provided by the Buyer to uniquely identify the Advertising Campaign for which the Order is being placed                                                                                                                                                                                                                                              | String (255) |
+| CampaignName         | A descriptive name provided by the Buyer which is associated with the Advertising Campaign for which the Order is being placed                                                                                                                                                                                                                       | String (255) |
+| PoNumber             | Provided by Buyer as a reference to be used by Buyers for any offline contact related to the Order                                                                                                                                                                                                                                                   | String (255) |
+| SalesOrderReference  | Provided by the Media Owner as a reference to be used by Buyers for any offline contact related to the Order                                                                                                                                                                                                                                         | String (255) |
+| BarterOrganizationId | The OrganizationID of a Barter Company can be added here to flag a Barter transaction                                                                                                                                                                                                                                                                | String (255) |
+| Other                | An opaque CLOB of provider-defined data. Providers may use this field as needed (for example, to store an ID that correlates this object with resources within their system). Note that any provider that edits this object may override the data in this field. The data should include a marker that you can identify to ensure the data is yours. | CLOB (10000) |
+
 
 ## Level 5 and Level 6 Classic Reporting JSON Example
 ```json
@@ -264,10 +293,10 @@ Example Filename:
 
 *ACCT1234_OD54321_LN54321-1_2021-11-01T000000Z_2021-11-08T173000Z_2021-11-09T030000Z.json*
 
-If the Report is generated at Order level (that contains an array of order line reports) the filename shall be contructed as follows:
+If the Report is generated at Order level (that contains an array of Reports for all lines in an Order) the filename shall be contructed as follows:
 *AccountId_OrderId_StartTime_EndTime_PublishTime.json*
 
-If the Report is generated at Account level (that (that contains an array of order and order line reports) the filename shall be contructed as follows:
+If the Report is generated at Account level (that contains an array of Reports for all Lines in all Orders from an Account) the filename shall be contructed as follows:
 *AccountId_StartTime_EndTime_PublishTime.json*
 
 
