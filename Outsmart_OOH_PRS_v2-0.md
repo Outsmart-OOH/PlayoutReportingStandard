@@ -160,76 +160,79 @@ It is required that the ooh playout reporting is delivered at the 'Spot Level' o
 ## Level 5 and Level 6 Classic Reporting JSON Example
 ```json
 {
-    "AccountId": "23873345",
-    "OrderId": "3479",
-    "LineId": "7",
-    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportPublishTime": "2020-12-24T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
-    "ReportEndTime": "2020-12-10T01:00:00.000Z",
-    "Report": [
-        {
-            "StartTime": "2020-12-09T00:00:00Z",
-            "EndTime":"2020-12-10T00:00:00Z",
-            "FrameID":"1234159856",
-            "CreativeID":"adfgj123",
-            "ShareOfTime":"100%"
-        },
-        {
-            "StartTime": "2020-12-09T00:00:00Z",
-            "EndTime":"2020-12-10T00:00:00Z",
-            "FrameID":"1234159857",
-            "CreativeID":"adfgj123",
-            "ShareOfTime":"100%"
-        }
-    ]
+    "ReportEndTime": "2020-12-22T00:00:00.000Z",
+    "Report": {
+        "AccountId": "23873345",
+        "OrderId": "3479",
+        "LineId": "7",
+        "OOHProviderData": [
+            "PO7567"
+        ],
+        "Stats": [
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime":"2020-12-22T00:00:00Z",
+                "FrameID":"1234159856",
+                "CreativeID":"adfgj123"
+            },
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime":"2020-12-22T00:00:00Z",
+                "FrameID":"1234159857",
+                "CreativeID":"adfgj123"
+            }
+        ]
+    }
 }
 ```
 ## Level 5 and Level 6 Digital Reporting JSON Example
 ```json
 {
-    "AccountId": "23873345",
-    "OrderId": "3479",
-    "LineId": "8",
     "ReportPublishTime": "2020-12-20T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
     "ReportEndTime": "2020-12-10T01:00:00.000Z",
-    "Report": [ 
-        {
-            "StartTime": "2020-12-09T00:00:00Z",
-            "EndTime":"2020-12-09T00:00:10Z",
-            "FrameID":"1234158956",
-            "CreativeID":"capad653",
-            "ShareOfTime":"16.66%"
-        },
-        {
-            "StartTime": "2020-12-09T00:02:00Z",
-            "EndTime":"2020-12-09T00:02:10Z",
-            "FrameID":"1234158956",
-            "CreativeID":"capad653",
-            "ShareOfTime":"16.66%"
-        },
-        {
-            "StartTime": "2020-12-09T00:03:00Z",
-            "EndTime":"2020-12-09T00:03:10Z",
-            "FrameID":"1234158956",
-            "CreativeID":"capad653",
-            "ShareOfTime":"16.66%"
-        },
-        {
-            "StartTime": "2020-12-09T00:04:00Z",
-            "EndTime":"2020-12-09T00:04:10Z",
-            "FrameID":"1234158956",
-            "CreativeID":"capad653",
-            "ShareOfTime":"16.66%"
-        },
-        {
-            "StartTime": "etc",
-            "EndTime":"etc",
-            "FrameID":"etc",
-            "CreativeID":"etc",
-            "ShareOfTime":"etc"
-        }
-    ]
+    "Report": {
+        "AccountId": "23873345",
+        "OrderId": "3479",
+        "LineId": "8",
+        "OOHProviderData": [
+            "PO7567"
+        ],
+        "Stats": [
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime": "2020-12-09T00:00:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:02:00Z",
+                "EndTime": "2020-12-09T00:02:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:03:00Z",
+                "EndTime": "2020-12-09T00:03:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:04:00Z",
+                "EndTime": "2020-12-09T00:04:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "etc",
+                "EndTime": "etc",
+                "FrameID": "etc",
+                "CreativeID": "etc"
+            }
+        ]
+    }
 }
 ```
 
