@@ -105,7 +105,7 @@ It is reccomended that Media Owners and Publishers implement Level 5 or Level 6 
 This is the standard for day/hour specific reporting that can be shared with customers to report on order-
 specific campaign delivery.
 
-The attached examples assume that they are accompanied by an Order ID that references that specific
+The attached examples assume that they are accompanied by an Order ID and Order Line ID that references that specific
 campaign.
 
 ![SummaryReport](Pictures/Summary.png)
@@ -152,7 +152,13 @@ granular detail is required.
 ![Level6DOOH](Pictures/Level6DOOH.png)
 
 # 9. JSON Schema
-The JSON schema is as described in the Stats OOH Reporting object in [OpenDirect OOH 1.5.1](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-1/OpenDirect_OOH_1-5-1_v1-1.md)
+The JSON schema is as follows:
+
+Reporting Object
+
+Report Object
+
+Stats Object
 
 ## Granularity
 It is required that the ooh playout reporting is delivered at the 'Spot Level' of reporting granularity (Level 5 or Level 6 Reporting as detiled in this document)
@@ -238,7 +244,7 @@ It is required that the ooh playout reporting is delivered at the 'Spot Level' o
 
 # 10. JSON Filename
 
-The structure of the name of the JSON reporting file is as follows:
+If the Report is generated for a single Order Line in an Order, the structure of the name of the JSON reporting file is as follows:
 
 *AccountId_OrderId_LineId_StartTime_EndTime_PublishTime.json*
   
@@ -257,6 +263,13 @@ e.g. yyyy-mm-ddThhmmssZ
 Example Filename:
 
 *ACCT1234_OD54321_LN54321-1_2021-11-01T000000Z_2021-11-08T173000Z_2021-11-09T030000Z.json*
+
+If the Report is generated at Order level (that contains an array of order line reports) the filename shall be contructed as follows:
+*AccountId_OrderId_StartTime_EndTime_PublishTime.json*
+
+If the Report is generated at Account level (that (that contains an array of order and order line reports) the filename shall be contructed as follows:
+*AccountId_StartTime_EndTime_PublishTime.json*
+
 
 # 11. Report Publishing
 The inital reccomendation is that the playout reports are written to a secure shared folder, ftp location or bucket that is only made available to the relevant client account user(s)
