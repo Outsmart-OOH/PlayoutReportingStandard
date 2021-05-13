@@ -108,7 +108,7 @@ specific campaign delivery.
 The attached examples assume that they are accompanied by an Order ID and Order Line ID that references that specific
 campaign.
 
-![SummaryReport](Pictures/Summary.png)
+![SummaryReport](Pictures/Summary2.png)
 
 # 7. The “Playout Report” Data Standard
 
