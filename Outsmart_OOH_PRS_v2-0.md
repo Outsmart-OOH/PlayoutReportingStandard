@@ -198,7 +198,7 @@ The JSON schema is as follows:
     "ReportPublishTime": "2020-12-24T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
     "ReportEndTime": "2020-12-22T00:00:00.000Z",
-    "Report": {
+    "Report": [{
         "AccountId": "23873345",
         "OrderId": "3479",
         "LineId": "7",
@@ -219,7 +219,7 @@ The JSON schema is as follows:
                 "CreativeID":"adfgj123"
             }
         ]
-    }
+    }]
 }
 ```
 ## Level 5 and Level 6 Digital Reporting JSON Example
@@ -228,7 +228,7 @@ The JSON schema is as follows:
     "ReportPublishTime": "2020-12-20T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
     "ReportEndTime": "2020-12-10T01:00:00.000Z",
-    "Report": {
+    "Report": [{
         "AccountId": "23873345",
         "OrderId": "3479",
         "LineId": "8",
@@ -267,7 +267,7 @@ The JSON schema is as follows:
                 "CreativeID": "etc"
             }
         ]
-    }
+    }]
 }
 ```
 
