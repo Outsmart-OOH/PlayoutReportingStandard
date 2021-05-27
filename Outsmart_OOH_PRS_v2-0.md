@@ -13,6 +13,8 @@
 
 **Knitting Media** Tim Harvey
 
+**LiveDOOH Signkick** Sebastiaan Schinkel
+
 **Mediacom** Nate Barker
 
 **Mereo** Luka Djukic
@@ -20,8 +22,6 @@
 **Ocean Outdoor** Angela Green, Doug Swan
 
 **Posterscope** Daniel Conway, Alex Radu
-
-**SignKick LiveDooh** Sebastiaan Schinkel
 
 **Talon Outdoor** Anant East
 
