@@ -195,6 +195,7 @@ The JSON schema is as follows:
 ## Level 5 and Level 6 Classic Reporting JSON Example
 ```json
 {
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json",
     "ReportPublishTime": "2020-12-24T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
     "ReportEndTime": "2020-12-22T00:00:00.000Z",
@@ -225,6 +226,7 @@ The JSON schema is as follows:
 ## Level 5 and Level 6 Digital Reporting JSON Example
 ```json
 {
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json",
     "ReportPublishTime": "2020-12-20T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
     "ReportEndTime": "2020-12-10T01:00:00.000Z",
