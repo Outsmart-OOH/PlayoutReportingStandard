@@ -156,23 +156,33 @@ It is required that the ooh playout reporting is delivered at the 'Spot Level' o
 The JSON schema is as follows:
 
 ## Reporting Object
-| Attribute         | Description                                             | Type         |
-| ----------------- | ------------------------------------------------------- | ------------ |
-| ReportPublishTime | The time the Report was published                       | ISO-8601     |
-| ReportStartTime   | The start time of the first playout event in the Report | ISO-8601     |
-| ReportEndTime     | The end time of the last playout event in the Report    | ISO-8601     |
-| Report            | Array of Report Objects                                 | Object Array |
+Reporting header for Report arrays
+
+| Attribute         | Description                                            | Type     |
+| ----------------- | ------------------------------------------------------ | -------- |
+| ReportPublishTime | The Date and Time in UTC when the Report was published | ISO-8601 |
+| ReportStartTime   | The first StartTime in the Report Array                | ISO-8601 |
+| ReportEndTime     | The last EndTime in the Report Array                   | ISO-8601 |
+| Report            | An Array of Report Objects                             | Object   |
+
+Reporting Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json
 
 ## Report Object
-| Attribute       | Description                                                                                                                                                                     | Type         |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| AccountId       | The buyer Account the Order was made to                                                                                                                                         | String(255)  |
-| OrderId         | The Order ID                                                                                                                                                                    | String(255)  |
-| LineId          | The Order Line ID                                                                                                                                                               | String(255)  |
-| OOHProviderData | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references. | Object       |
-| Stats           | An array of 'Stats' objects describing playout Report Data at 'Spot' level                                                                                                      | Object Array |
+Report header detailing the Account, Order and Orderline information for the Stats arrays
+
+| Attribute       | Description                                                                                                                                                                     | Type   |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| AccountId       | The ID of the account that identifies the buyer, advertiser and any other stakeholders.                                                                                         | String |
+| OrderId         | The ID of the order that the Stats belong to                                                                                                                                    | String |
+| LineId          | The ID of the orderline  that the Stats belong to                                                                                                                               | String |
+| OOHProviderData | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references. | Object |
+| Stats           | An Array of playout events that can be aggregated from a single playout event to a summary of perfromance over the whole campaign period.                                       | Object |
+
+Report Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/report.json
 
 ## Stats Object
+The Schedule and Delivery data served at Flight, Week, Day, Hour and/or Spot level of granularity at the Publisher's/Media Owner's discretion
+
 | Attribute  | Description                                                        | Type        |
 | ---------- | ------------------------------------------------------------------ | ----------- |
 | StartTime  | Start Time of the 'Spot' playout event                             | ISO-8601    |
@@ -180,6 +190,7 @@ The JSON schema is as follows:
 | FrameId    | Media Owner's given ID for the Frame displaying the playout event  | String(255) |
 | CreativeId | Media Owner's given ID for the creative shown in the playout event | String(255) |
 
+Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats.json
 
 ## OOHProviderData Object
 | Attribute            | Description                                                                                                                                                                                                                                                                                                                                          | Type         |
