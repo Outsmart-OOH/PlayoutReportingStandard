@@ -215,7 +215,7 @@ Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/mas
         "OrderId": "3479",
         "LineId": "7",
         "OOHProviderData": [
-            "PO7567"
+           "PoNumber":"PO7567"
         ],
         "Stats": [
             {
@@ -246,7 +246,7 @@ Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/mas
         "OrderId": "3479",
         "LineId": "8",
         "OOHProviderData": [
-            "PO7567"
+            "PoNumber":"PO7567"
         ],
         "Stats": [
             {
