@@ -7,6 +7,7 @@ through consultation with the Playout Delivery Group and Playout Steering Commit
 
 | **Version** | **Date** | **Updated by** | **Details** |
 | ------------|----------|----------------|-------------|
+| 1.1 | 07 Jun 2023 | Adwanted UK (Peter Howe) | Make media_owner_playout_ref mandatory and longer. |
 | 1.0 | 12 Apr 2023 | Adwanted UK (Peter Howe) | First published specification. |
 | 0.2 | 06 Mar 2023 | Adwanted UK (Peter Howe) | Amended following discussions. Used for  final review before publishing. |
 | 0.1 | 21 Feb 2023 | Adwanted UK (Peter Howe) | Initial version used for discussion with Delivery Group and Steering Group. |
@@ -73,7 +74,7 @@ Such fields are marked with a `?` below.
 | **`* `creative_name** | TEXT | Max length 128 characters | Creative title, to assist with reporting. Usually a filename. |
 | **third_party_creative_ref** | TEXT | Max length 128 characters | Creative reference provided by a third-party such as the creative agency. This might be a URL or a GUID, for example. |
 | **creative_trigger_event** | TEXT | Max length 64 characters | The creative trigger event, indicating what prompted the given creative to be used. |
-| **media_owner_playout_ref** | TEXT | Max length 36 characters | Media Owner-defined reference representing this record. For the Media Owner, this should uniquely identify this record. (Note that records supplied by other Media Owners may happen to use the same ID however.) |
+| **`* `media_owner_playout_ref** | TEXT | Max length 48 characters | Media Owner-defined reference representing this record. For the Media Owner, this should uniquely identify this record across all time. (Note that records supplied by other Media Owners may happen to use the same ID however.) |
 
 ### Record augmentation
 
