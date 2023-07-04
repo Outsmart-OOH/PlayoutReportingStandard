@@ -7,6 +7,7 @@ through consultation with the Playout Delivery Group and Playout Steering Commit
 
 | **Version** | **Date** | **Updated by** | **Details** |
 | ------------|----------|----------------|-------------|
+| 1.2 | 04 Jul 2023 | Adwanted UK (Peter Howe) | Replace player_mac_address with more flexible player_ref. |
 | 1.1 | 07 Jun 2023 | Adwanted UK (Peter Howe) | Make media_owner_playout_ref mandatory and longer. |
 | 1.0 | 12 Apr 2023 | Adwanted UK (Peter Howe) | First published specification. |
 | 0.2 | 06 Mar 2023 | Adwanted UK (Peter Howe) | Amended following discussions. Used for  final review before publishing. |
@@ -56,7 +57,7 @@ Such fields are marked with a `?` below.
 | Field name | Type | Format | Description |
 |---|---|---|---|
 | **`* `frame_id**	| INT4 | SPACE Frame ID | The Frame ID held in SPACE. |
-| **player_mac_address** | TEXT	| Length: 12 characters (i.e. with conventional colons/hyphens omitted) | The MAC Address of the network interface used by the player. |
+| **player_ref** | TEXT	| Max length 32 characters | The MAC Address or other reference uniquely identifying the player. |
 | *See notes opposite<br>relating to the time<br>fields below* | | | *It is mandatory to provide either **spot_start**/**spot_end**, **spot_start**/**spot_length** or **spot_end**/**spot_length**.<br>If all three fields are provided, **spot_end** will be ignored.<br>When providing **spot_start** or **spot_end**, it is mandatory to provide the associated time zone (**_tz**) value.* |
 | **`? `spot_start_utc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC start time of the spot. |
 | **`? `spot_start_tz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot start time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
