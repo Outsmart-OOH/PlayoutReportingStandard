@@ -7,6 +7,8 @@ through consultation with the Playout Delivery Group and Playout Steering Commit
 
 | **Version** | **Date** | **Updated by** | **Details** |
 | ------------|----------|----------------|-------------|
+| 1.2 | 04 Jul 2023 | Adwanted UK (Peter Howe) | Replace player_mac_address with more flexible player_ref. |
+| 1.1 | 07 Jun 2023 | Adwanted UK (Peter Howe) | Make media_owner_playout_ref mandatory and longer. |
 | 1.0 | 12 Apr 2023 | Adwanted UK (Peter Howe) | First published specification. |
 | 0.2 | 06 Mar 2023 | Adwanted UK (Peter Howe) | Amended following discussions. Used for  final review before publishing. |
 | 0.1 | 21 Feb 2023 | Adwanted UK (Peter Howe) | Initial version used for discussion with Delivery Group and Steering Group. |
@@ -55,7 +57,7 @@ Such fields are marked with a `?` below.
 | Field name | Type | Format | Description |
 |---|---|---|---|
 | **`* `frame_id**	| INT4 | SPACE Frame ID | The Frame ID held in SPACE. |
-| **player_mac_address** | TEXT	| Length: 12 characters (i.e. with conventional colons/hyphens omitted) | The MAC Address of the network interface used by the player. |
+| **player_ref** | TEXT	| Max length 32 characters | The MAC Address or other reference uniquely identifying the player. |
 | *See notes opposite<br>relating to the time<br>fields below* | | | *It is mandatory to provide either **spot_start**/**spot_end**, **spot_start**/**spot_length** or **spot_end**/**spot_length**.<br>If all three fields are provided, **spot_end** will be ignored.<br>When providing **spot_start** or **spot_end**, it is mandatory to provide the associated time zone (**_tz**) value.* |
 | **`? `spot_start_utc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC start time of the spot. |
 | **`? `spot_start_tz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot start time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
@@ -73,7 +75,7 @@ Such fields are marked with a `?` below.
 | **`* `creative_name** | TEXT | Max length 128 characters | Creative title, to assist with reporting. Usually a filename. |
 | **third_party_creative_ref** | TEXT | Max length 128 characters | Creative reference provided by a third-party such as the creative agency. This might be a URL or a GUID, for example. |
 | **creative_trigger_event** | TEXT | Max length 64 characters | The creative trigger event, indicating what prompted the given creative to be used. |
-| **media_owner_playout_ref** | TEXT | Max length 36 characters | Media Owner-defined reference representing this record. For the Media Owner, this should uniquely identify this record. (Note that records supplied by other Media Owners may happen to use the same ID however.) |
+| **`* `media_owner_playout_ref** | TEXT | Max length 48 characters | Media Owner-defined reference representing this record. For the Media Owner, this should uniquely identify this record across all time. (Note that records supplied by other Media Owners may happen to use the same ID however.) |
 
 ### Record augmentation
 
