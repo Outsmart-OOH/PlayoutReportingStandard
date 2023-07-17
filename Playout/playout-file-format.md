@@ -7,6 +7,7 @@ through consultation with the Playout Delivery Group and Playout Steering Commit
 
 | **Version** | **Date** | **Updated by** | **Details** |
 | ------------|----------|----------------|-------------|
+| 1.3 | 17 Jul 2023 | Adwanted UK (Peter Howe) | Increase player_ref to max 36 characters. |
 | 1.2 | 04 Jul 2023 | Adwanted UK (Peter Howe) | Replace player_mac_address with more flexible player_ref. |
 | 1.1 | 07 Jun 2023 | Adwanted UK (Peter Howe) | Make media_owner_playout_ref mandatory and longer. |
 | 1.0 | 12 Apr 2023 | Adwanted UK (Peter Howe) | First published specification. |
@@ -56,26 +57,26 @@ Such fields are marked with a `?` below.
 
 | Field name | Type | Format | Description |
 |---|---|---|---|
-| **`* `frame_id**	| INT4 | SPACE Frame ID | The Frame ID held in SPACE. |
-| **player_ref** | TEXT	| Max length 32 characters | The MAC Address or other reference uniquely identifying the player. |
+| **`*` frame_id**	| INT4 | SPACE Frame ID | The Frame ID held in SPACE. |
+| **player_ref** | TEXT	| Max length 36 characters | The MAC Address or other reference uniquely identifying the player. |
 | *See notes opposite<br>relating to the time<br>fields below* | | | *It is mandatory to provide either **spot_start**/**spot_end**, **spot_start**/**spot_length** or **spot_end**/**spot_length**.<br>If all three fields are provided, **spot_end** will be ignored.<br>When providing **spot_start** or **spot_end**, it is mandatory to provide the associated time zone (**_tz**) value.* |
-| **`? `spot_start_utc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC start time of the spot. |
-| **`? `spot_start_tz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot start time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
-| **`? `spot_end_utc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC end time of the spot. |
-| **`? `spot_end_tz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot end time. (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
-| **`? `spot_length** | INT8 | Max value 9223372036854775807 | Spot Length in milliseconds. |
-| **`? `share_of_time** | DECIMAL(5,2) | Percentage to max 2 decimal places (no % sign). | Share of time. This must be provided for scrollers, but its presence is not policed by Playout. Media Owners must determine when this must be supplied. |
-| **`* `order_id**	| TEXT | Max length 36 characters. | Media Owner-defined order identifier. |
-| **`? `line_id** | TEXT | Max length 36 characters. | The identifier for the order line that this playout belongs to.<br>This is mandatory for OpenDirect trades but its presence is not policed by Playout. Media Owners must determine when this must be supplied. |
-| **`* `space_buyer_id** | INT4 | Max value 2147483647 | SPACE-defined ID for the buyer (often a Specialist). This can be a SPACE agency_id or client_id. (Note that these IDs do not overlap in SPACE.) |
+| **`?` spot_start_utc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC start time of the spot. |
+| **`?` spot_start_tz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot start time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
+| **`?` spot_end_utc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC end time of the spot. |
+| **`?` spot_end_tz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot end time. (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
+| **`?` spot_length** | INT8 | Max value 9223372036854775807 | Spot Length in milliseconds. |
+| **`?` share_of_time** | DECIMAL(5,2) | Percentage to max 2 decimal places (no % sign). | Share of time. This must be provided for scrollers, but its presence is not policed by Playout. Media Owners must determine when this must be supplied. |
+| **`*` order_id**	| TEXT | Max length 36 characters. | Media Owner-defined order identifier. |
+| **`?` line_id** | TEXT | Max length 36 characters. | The identifier for the order line that this playout belongs to.<br>This is mandatory for OpenDirect trades but its presence is not policed by Playout. Media Owners must determine when this must be supplied. |
+| **`*` space_buyer_id** | INT4 | Max value 2147483647 | SPACE-defined ID for the buyer (often a Specialist). This can be a SPACE agency_id or client_id. (Note that these IDs do not overlap in SPACE.) |
 | **space_agency_id** | INT4 | Max value 2147483647	| SPACE-defined ID for the agency. If the Agency is the same as the Buyer, this can field should still be populated to aid reporting. |
-| **`* `space_brand_id** | INT4 | Max value 2147483647 | SPACE-defined Brand ID. |
+| **`*` space_brand_id** | INT4 | Max value 2147483647 | SPACE-defined Brand ID. |
 | **buyer_campaign_ref** | TEXT | Max length 64 characters | Buyer-defined campaign reference (could be an Order ID, for example). |
-| **`* `creative_id** | TEXT | Max length 64 characters | Media Owner-defined creative identifier. |
-| **`* `creative_name** | TEXT | Max length 128 characters | Creative title, to assist with reporting. Usually a filename. |
+| **`*` creative_id** | TEXT | Max length 64 characters | Media Owner-defined creative identifier. |
+| **`*` creative_name** | TEXT | Max length 128 characters | Creative title, to assist with reporting. Usually a filename. |
 | **third_party_creative_ref** | TEXT | Max length 128 characters | Creative reference provided by a third-party such as the creative agency. This might be a URL or a GUID, for example. |
 | **creative_trigger_event** | TEXT | Max length 64 characters | The creative trigger event, indicating what prompted the given creative to be used. |
-| **`* `media_owner_playout_ref** | TEXT | Max length 48 characters | Media Owner-defined reference representing this record. For the Media Owner, this should uniquely identify this record across all time. (Note that records supplied by other Media Owners may happen to use the same ID however.) |
+| **`*` media_owner_playout_ref** | TEXT | Max length 48 characters | Media Owner-defined reference representing this record. For the Media Owner, this should uniquely identify this record across all time. (Note that records supplied by other Media Owners may happen to use the same ID however.) |
 
 ### Record augmentation
 
