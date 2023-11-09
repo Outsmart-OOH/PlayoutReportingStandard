@@ -61,10 +61,10 @@ Such fields are marked with a `?` below.
 | **`*` frameid**	| INT4 | SPACE Frame ID | The Frame ID held in SPACE. |
 | **playerref** | TEXT	| Max length 36 characters | The MAC Address or other reference uniquely identifying the player. |
 | *See notes opposite<br>relating to the time<br>fields below* | | | *It is mandatory to provide either **spotstart**/**spotend**, **spotstart**/**spotlength** or **spotend**/**spotlength**.<br>If all three fields are provided, **spotend** will be ignored.<br>When providing **spotstart** or **spotend**, it is mandatory to provide the associated time zone (**tz**) value.* |
-| **`?` spotstartutc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC start time of the spot. |
-| **`?` spotstarttz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot start time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
-| **`?` spotendutc** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC end time of the spot. |
-| **`?` spotendtz** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot end time. (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
+| **`?` startdate** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC start time of the spot. |
+| **`?` startutcoffset** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot start time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
+| **`?` enddate** | TIMESTAMP | *yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*.*sss* | The UTC end time of the spot. |
+| **`?` endutcoffset** | TZ_OFFSET | ±*hh*:*mm*<br>Z | Time zone offset for the spot end time. (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.) |
 | **`?` spotlength** | INT8 | Max value 9223372036854775807 | Spot Length in milliseconds. |
 | **`?` shareoftime** | DECIMAL(5,2) | Percentage to max 2 decimal places (no % sign). | Share of time. This must be provided for scrollers, but its presence is not policed by Playout. Media Owners must determine when this must be supplied. |
 | **`*` orderid**	| TEXT | Max length 36 characters. | Media Owner-defined order identifier. |
