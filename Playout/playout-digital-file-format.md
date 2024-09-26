@@ -1,6 +1,6 @@
-# Playout File Format
+# Playout Digital File Format
 
-This document defines the format for files to be supplied by Media Owners to Playout. The first published version has been agreed
+This document defines the format for files for Digital frame records to be supplied by Media Owners to Playout. The first published version has been agreed
 through consultation with the Playout Delivery Group and Playout Steering Committee.
 
 ## Version control
