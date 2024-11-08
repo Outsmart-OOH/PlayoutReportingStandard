@@ -68,7 +68,7 @@ Some fields \*must\* be populated under certain circumstances, as described in t
 | **?enddate** | TIMESTAMP | _yyyy_\-_mm_\-_dd_T_hh_:_mm_:_ss_._sss_ | The UTC end time of the display. This may not be in the future.<br><br>Media Owners must leave this field blank when the creative is posted and not yet removed. |
 | ?endutcoffset | TZ_OFFSET | ±hh:mm Z | Time zone offset for the display end time (e.g. +01:00 for BST; Z or :00:00 can be used for GMT.)<br><br>Media Owners must leave this field blank when the creative is posted and not yet removed. |
 | shareoftime | DECIMAL (5,2) | Percentage to max 2 decimal places (no % sign). | The SOT a creative had, or is known will have |
-| \*orderid | TEXT | Max length 36 characters. | Media Owner-defined order identifier. |
+| \*orderid | TEXT | Max length 256 characters. | Media Owner-defined order identifier. |
 | ?lineid | TEXT | Max length 36 characters. | The identifier for the order line that this playout belongs to. This is mandatory for OpenDirect trades, but its presence is not policed by Playout. Media Owners must determine when this must be supplied. |
 | \*spacebuyerid | INT4 | Max value 2147483647 | SPACE-defined ID for the buyer (often a Specialist). This can be a SPACE Agency ID or Client ID. (Note that these IDs do not overlap in SPACE.) |
 | spaceagencyid | INT4 | Max value 2147483647 | SPACE-defined ID for the agency. If the Agency is the same as the Buyer, this field should still be populated to aid reporting. |
